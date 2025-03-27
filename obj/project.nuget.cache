@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JQEjXlEKGCE=",
+  "dgSpecHash": "3pcweRorJQM=",
   "success": true,
-  "projectFilePath": "C:\\Font_End_.Net\\MiniprojectCross.csproj",
+  "projectFilePath": "C:\\Final_CrossPlatfrom\\MiniprojectCross.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kook6\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\kook6\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",

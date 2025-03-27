@@ -8,7 +8,7 @@
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#FFD700" Offset="0.0" />
+                    <GradientStop Color="#FF880E00" Offset="0.0" />
                     <GradientStop Color="#f0f0f0" Offset="0.6" />
                     <GradientStop Color="#777777" Offset="1.0" />
                 </LinearGradientBrush>
@@ -16,7 +16,7 @@
         </BoxView>
         
         <!-- Decorative elements -->
-        <BoxView Color="#FFD700" Opacity="0.3"
+        <BoxView Color="#FF880E00" Opacity="0.3"
                  HeightRequest="200" WidthRequest="200"
                  HorizontalOptions="End" VerticalOptions="Start"
                  CornerRadius="100" Margin="-50,-50,0,0" />
@@ -105,7 +105,7 @@
                         <!-- Remember Me Checkbox -->
                         <HorizontalStackLayout Margin="0,5,0,0">
                             <CheckBox x:Name="RememberMeCheckbox" 
-                                      Color="#FFD700"
+                                      Color="#FF880E00"
                                       Scale="0.9" />
                             <Label Text="จำข้อมูลเข้าสู่ระบบ" 
                                    VerticalOptions="Center"
@@ -117,7 +117,7 @@
                         <!-- Login Button with university colors -->
                         <Button x:Name="LoginButton" 
                                 Text="เข้าสู่ระบบ" 
-                                BackgroundColor="#FFD700"
+                                BackgroundColor="#FFA35905"
                                 TextColor="#333333"
                                 FontAttributes="Bold"
                                 Margin="0,8,0,5"

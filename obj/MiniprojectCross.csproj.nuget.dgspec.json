@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Font_End_.Net\\MiniprojectCross.csproj": {}
+    "C:\\Final_CrossPlatfrom\\MiniprojectCross.csproj": {}
   },
   "projects": {
-    "C:\\Font_End_.Net\\MiniprojectCross.csproj": {
+    "C:\\Final_CrossPlatfrom\\MiniprojectCross.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Font_End_.Net\\MiniprojectCross.csproj",
+        "projectUniqueName": "C:\\Final_CrossPlatfrom\\MiniprojectCross.csproj",
         "projectName": "MiniprojectCross",
-        "projectPath": "C:\\Font_End_.Net\\MiniprojectCross.csproj",
+        "projectPath": "C:\\Final_CrossPlatfrom\\MiniprojectCross.csproj",
         "packagesPath": "C:\\Users\\kook6\\.nuget\\packages\\",
-        "outputPath": "C:\\Font_End_.Net\\obj\\",
+        "outputPath": "C:\\Final_CrossPlatfrom\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

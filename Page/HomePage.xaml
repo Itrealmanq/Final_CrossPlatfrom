@@ -11,7 +11,7 @@
                      <BoxView.Background>
                             <LinearGradientBrush StartPoint="0,0"
                                                  EndPoint="0,1">
-                                   <GradientStop Color="#FFD700"
+                                   <GradientStop Color="#FF880E00"
                                                  Offset="0.0"/>
                                    <GradientStop Color="#f0f0f0"
                                                  Offset="0.6"/>
