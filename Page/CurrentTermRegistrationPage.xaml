@@ -11,9 +11,9 @@
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#FFD700" Offset="0.0"/>
+                    <GradientStop Color="#FF880E00" Offset="0.0"/>
                     <GradientStop Color="#f0f0f0" Offset="0.6"/>
-                    <GradientStop Color="#777777" Offset="1.0"/>
+                    <GradientStop Color="#FFC47900" Offset="1.0"/>
                 </LinearGradientBrush>
             </BoxView.Background>
         </BoxView>
@@ -30,13 +30,12 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Text="← กลับ" BackgroundColor="#FFD700" TextColor="#333333"
+                    <Button Grid.Column="0" Text="← กลับ" BackgroundColor="#FF00FF04" TextColor="#333333"
                             HeightRequest="40" WidthRequest="90" FontSize="14" CornerRadius="20" VerticalOptions="Center"
                             Clicked="OnClickedHome"/>
                     <Label Grid.Column="1" Text="การลงทะเบียนเทอมปัจจุบัน" FontSize="20" FontAttributes="Bold"
                            TextColor="#333333" HorizontalOptions="Center" VerticalOptions="Center"/>
-                    <Button Grid.Column="2" Text="ส่งออก PDF" BackgroundColor="#666666" TextColor="White"
-                            HeightRequest="40" WidthRequest="110" FontSize="14" CornerRadius="20" VerticalOptions="Center"/>
+                    
                 </Grid>
 
                 <!-- Term Information Card -->

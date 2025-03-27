@@ -11,16 +11,11 @@
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#FFD700" Offset="0.0"/>
-                    <GradientStop Color="#f0f0f0" Offset="0.6"/>
-                    <GradientStop Color="#777777" Offset="1.0"/>
+                    <GradientStop Color="#FF880E00" Offset="0.0"/>
+                    <GradientStop Color="#FFC47900" Offset="1.0"/>
                 </LinearGradientBrush>
             </BoxView.Background>
         </BoxView>
-        <BoxView Color="#FFD700" Opacity="0.3" HeightRequest="200" WidthRequest="200"
-                 HorizontalOptions="End" VerticalOptions="Start" CornerRadius="100" Margin="-50,-50,0,0"/>
-        <BoxView Color="#666666" Opacity="0.4" HeightRequest="150" WidthRequest="150"
-                 HorizontalOptions="Start" VerticalOptions="End" CornerRadius="75" Margin="-30,0,0,-30"/>
         <ScrollView>
             <VerticalStackLayout Spacing="15" Padding="20">
                 <!-- Header with back button -->
@@ -30,13 +25,12 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <Button Grid.Column="0" Text="← กลับ" BackgroundColor="#FFD700" TextColor="#333333"
+                    <Button Grid.Column="0" Text="กลับ" BackgroundColor="#FF08CE23" TextColor="#333333"
                             HeightRequest="40" WidthRequest="90" FontSize="14" CornerRadius="20" VerticalOptions="Center"
                             Clicked="OnClickedHome"/>
                     <Label Grid.Column="1" Text="การลงทะเบียนเทอมก่อนหน้า" FontSize="20" FontAttributes="Bold"
                            TextColor="#333333" HorizontalOptions="Center" VerticalOptions="Center"/>
-                    <Button Grid.Column="2" Text="ส่งออก PDF" BackgroundColor="#666666" TextColor="White"
-                            HeightRequest="40" WidthRequest="110" FontSize="14" CornerRadius="20" VerticalOptions="Center"/>
+
                 </Grid>
 
                 <!-- Term Selector Card -->
@@ -59,7 +53,7 @@
                                         CommandParameter="{Binding User.PreviousSemesters[0]}">
                                     <Button.Triggers>
                                         <DataTrigger TargetType="Button" Binding="{Binding SelectedPreviousSemester}" Value="{Binding User.PreviousSemesters[0]}">
-                                            <Setter Property="BackgroundColor" Value="#FFD700"/>
+                                            <Setter Property="BackgroundColor" Value="#FF02CE1A"/>
                                             <Setter Property="TextColor" Value="#333333"/>
                                             <Setter Property="FontAttributes" Value="Bold"/>
                                             <Setter Property="BorderWidth" Value="0"/>

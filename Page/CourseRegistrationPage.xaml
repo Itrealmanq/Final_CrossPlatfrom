@@ -11,16 +11,12 @@
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#FFD700" Offset="0.0"/>
+                    <GradientStop Color="#FF880E00" Offset="0.0"/>
                     <GradientStop Color="#f0f0f0" Offset="0.6"/>
                     <GradientStop Color="#777777" Offset="1.0"/>
                 </LinearGradientBrush>
             </BoxView.Background>
         </BoxView>
-        <BoxView Color="#FFD700" Opacity="0.3" HeightRequest="200" WidthRequest="200"
-                 HorizontalOptions="End" VerticalOptions="Start" CornerRadius="100" Margin="-50,-50,0,0"/>
-        <BoxView Color="#666666" Opacity="0.4" HeightRequest="150" WidthRequest="150"
-                 HorizontalOptions="Start" VerticalOptions="End" CornerRadius="75" Margin="-30,0,0,-30"/>
         <ScrollView>
             <VerticalStackLayout Spacing="15" Padding="20">
                 <!-- Header with back button -->
