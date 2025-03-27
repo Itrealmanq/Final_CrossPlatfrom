@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MiniprojectCross.Page.CourseRegistrationPage"
+             xmlns:viewmodel="clr-namespace:MiniprojectCross.ViewModel"
+             xmlns:model="clr-namespace:MiniprojectCross.Model"
+             x:DataType="viewmodel:ShowDataStudent"
+             Title="ลงทะเบียนวิชา">
+    <Grid>
+        <!-- Background with yellow and gray gradient -->
+        <BoxView>
+            <BoxView.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#FFD700" Offset="0.0"/>
+                    <GradientStop Color="#f0f0f0" Offset="0.6"/>
+                    <GradientStop Color="#777777" Offset="1.0"/>
+                </LinearGradientBrush>
+            </BoxView.Background>
+        </BoxView>
+        <BoxView Color="#FFD700" Opacity="0.3" HeightRequest="200" WidthRequest="200"
+                 HorizontalOptions="End" VerticalOptions="Start" CornerRadius="100" Margin="-50,-50,0,0"/>
+        <BoxView Color="#666666" Opacity="0.4" HeightRequest="150" WidthRequest="150"
+                 HorizontalOptions="Start" VerticalOptions="End" CornerRadius="75" Margin="-30,0,0,-30"/>
+        <ScrollView>
+            <VerticalStackLayout Spacing="15" Padding="20">
+                <!-- Header with back button -->
+                <Grid Margin="0,15,0,10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Text="← กลับ" BackgroundColor="#FFD700" TextColor="#333333"
+                            HeightRequest="40" WidthRequest="90" FontSize="14" CornerRadius="20" VerticalOptions="Center"
+                            Clicked="OnClickedHome"/>
+                    <Label Grid.Column="1" Text="ลงทะเบียนวิชา" FontSize="20" FontAttributes="Bold"
+                           TextColor="#333333" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Grid>
+
+                <!-- Search Bar -->
+                <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="15" HasShadow="True"
+                       BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
+                    <SearchBar Placeholder="ค้นหาวิชา (รหัส, ชื่อวิชา)" Text="{Binding SearchText, Mode=TwoWay}"
+                              TextChanged="OnSearchTextChanged" FontSize="16" TextColor="#333333"/>
+                </Frame>
+
+                <!-- Available Courses Card -->
+                <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
+                       BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="วิชาที่สามารถลงทะเบียนได้" FontSize="18" FontAttributes="Bold" TextColor="#333333"/>
+                        <CollectionView ItemsSource="{Binding FilteredAvailableCourses}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:AvailableCourse">
+                                    <Frame BorderColor="#DDDDDD" CornerRadius="12" Padding="15" HasShadow="False"
+                                           BackgroundColor="White" Margin="0,5">
+                                        <Grid ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="Auto"/>
+                                            </Grid.ColumnDefinitions>
+                                            <BoxView Grid.Column="0" Color="#FFD700" WidthRequest="8" HeightRequest="60"
+                                                     CornerRadius="4" VerticalOptions="Center"/>
+                                            <VerticalStackLayout Grid.Column="1" Spacing="5">
+                                                <Label Text="{Binding Id}" FontSize="16" FontAttributes="Bold" TextColor="#333333"/>
+                                                <Label Text="{Binding Name}" FontSize="14" TextColor="#333333"/>
+                                                <Label Text="{Binding NameEng}" FontSize="13" TextColor="#555555"/>
+                                                <HorizontalStackLayout Spacing="10">
+                                                    <Label Text="{Binding Credits, StringFormat='{0} หน่วยกิต'}" FontSize="13" TextColor="#777777"/>
+                                                    <Label Text="•" FontSize="13" TextColor="#AAAAAA"/>
+                                                    <Label Text="{Binding Section, StringFormat='หมู่ {0}'}" FontSize="13" TextColor="#777777"/>
+                                                </HorizontalStackLayout>
+                                                <Label Text="{Binding Instructor}" FontSize="13" TextColor="#777777"/>
+                                                <Label Text="{Binding ScheduleDisplay}" FontSize="13" TextColor="#777777"/>
+                                                <Label Text="{Binding AvailableSeats, StringFormat='ที่นั่งว่าง: {0}/{1}', Converter={StaticResource SeatConverter}, ConverterParameter={Binding MaxSeats}}"
+                                                       FontSize="13" TextColor="#777777"/>
+                                            </VerticalStackLayout>
+                                            <Button Grid.Column="2" Text="ลงทะเบียน" BackgroundColor="#FFD700" TextColor="#333333"
+                                                    FontSize="14" CornerRadius="15" HeightRequest="40" WidthRequest="100"
+                                                    Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ShowDataStudent}}, Path=RegisterCourseCommand}"
+                                                    CommandParameter="{Binding .}"
+                                                    IsEnabled="{Binding AvailableSeats, Converter={StaticResource IntToBoolConverter}}"/>
+                                        </Grid>
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Registered Courses Card -->
+                <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
+                       BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
+                    <VerticalStackLayout Spacing="15">
+                        <Label Text="วิชาที่ลงทะเบียนแล้ว" FontSize="18" FontAttributes="Bold" TextColor="#333333"/>
+                        <Label Text="{Binding TotalRegisteredCredits, StringFormat='หน่วยกิตรวม: {0}'}" FontSize="16" TextColor="#333333"/>
+                        <CollectionView ItemsSource="{Binding InMemoryRegisteredCourses}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate x:DataType="model:CurrentSemesterSubject">
+                                    <Frame BorderColor="#DDDDDD" CornerRadius="12" Padding="15" HasShadow="False"
+                                           BackgroundColor="White" Margin="0,5">
+                                        <Grid ColumnSpacing="10">
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>
+                                            </Grid.ColumnDefinitions>
+                                            <BoxView Grid.Column="0" Color="#44CC00" WidthRequest="8" HeightRequest="60"
+                                                     CornerRadius="4" VerticalOptions="Center"/>
+                                            <VerticalStackLayout Grid.Column="1" Spacing="5">
+                                                <Label Text="{Binding Id}" FontSize="16" FontAttributes="Bold" TextColor="#333333"/>
+                                                <Label Text="{Binding Name}" FontSize="14" TextColor="#333333"/>
+                                                <Label Text="{Binding NameEng}" FontSize="13" TextColor="#555555"/>
+                                                <HorizontalStackLayout Spacing="10">
+                                                    <Label Text="{Binding Credits, StringFormat='{0} หน่วยกิต'}" FontSize="13" TextColor="#777777"/>
+                                                    <Label Text="•" FontSize="13" TextColor="#AAAAAA"/>
+                                                    <Label Text="{Binding Section, StringFormat='หมู่ {0}'}" FontSize="13" TextColor="#777777"/>
+                                                </HorizontalStackLayout>
+                                                <Label Text="{Binding Instructor}" FontSize="13" TextColor="#777777"/>
+                                                <Label Text="{Binding ScheduleDisplay}" FontSize="13" TextColor="#777777"/>
+                                            </VerticalStackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

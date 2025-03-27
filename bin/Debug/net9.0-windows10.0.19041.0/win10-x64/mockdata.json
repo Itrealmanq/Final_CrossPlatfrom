@@ -1,0 +1,646 @@
+{
+  "student": {
+    "id": "6310500123",
+    "email": "somchai.j@student.ku.ac.th",
+    "password": "password123",
+    "profile": {
+      "firstname": "สมชาย",
+      "lastname": "จริงใจ",
+      "nickname": "ชาย",
+      "faculty": "วิศวกรรมศาสตร์",
+      "department": "วิศวกรรมคอมพิวเตอร์",
+      "year": 3,
+      "advisor": "รศ.ดร.มานี ดีงาม",
+      "gpax": 3.45,
+      "status": "กำลังศึกษา",
+      "studentType": "ภาคปกติ",
+      "entryYear": 2021,
+      "birthdate": "2002-05-15",
+      "phoneNumber": "0812345678",
+      "address": "123 หมู่ 4 ต.คลองหนึ่ง อ.คลองหลวง จ.ปทุมธานี 12120",
+      "profileImage": "https://static.wikia.nocookie.net/thai_entertainment/images/3/3e/1MILL_NGU2_Promotional_Image.png/revision/latest?cb=20211009145618"
+    }
+  },
+  "currentSemester": {
+    "academicYear": 2023,
+    "term": 2,
+    "registrationStatus": "ลงทะเบียนแล้ว",
+    "paymentStatus": "ชำระเงินแล้ว",
+    "registrationDate": "2023-12-20T09:15:23",
+    "totalCredits": 13,
+    "totalFee": 21000,
+    "subjects": [
+      {
+        "id": "01219333",
+        "name": "ระบบฐานข้อมูล",
+        "nameEng": "Database Systems",
+        "section": 1,
+        "credits": 3,
+        "grade": null,
+        "instructor": "ผศ.ดร.สมศักดิ์ มีเจริญ",
+        "schedule": [
+          {
+            "day": "จันทร์",
+            "time": "09:00-12:00",
+            "room": "E201"
+          },
+          {
+            "day": "พุธ",
+            "time": "13:00-15:00",
+            "room": "คอมแลป 2"
+          }
+        ],
+        "midtermExam": "2024-02-15T13:00:00",
+        "finalExam": "2024-03-20T09:00:00",
+        "status": "กำลังเรียน"
+      },
+      {
+        "id": "01219351",
+        "name": "การพัฒนาซอฟต์แวร์เชิงคอมโพเนนต์",
+        "nameEng": "Component-Based Software Development",
+        "section": 2,
+        "credits": 3,
+        "grade": null,
+        "instructor": "รศ.ดร.วิชัย วงศ์ใหญ่",
+        "schedule": [
+          {
+            "day": "อังคาร",
+            "time": "09:00-12:00",
+            "room": "E203"
+          },
+          {
+            "day": "พฤหัสบดี",
+            "time": "09:00-11:00",
+            "room": "คอมแลป 3"
+          }
+        ],
+        "midtermExam": "2024-02-16T09:00:00",
+        "finalExam": "2024-03-21T13:00:00",
+        "status": "กำลังเรียน"
+      },
+      {
+        "id": "01219361",
+        "name": "การพัฒนาแอปพลิเคชันบนอุปกรณ์เคลื่อนที่",
+        "nameEng": "Mobile Application Development",
+        "section": 1,
+        "credits": 3,
+        "grade": null,
+        "instructor": "ผศ.ดร.นภา สุขใจ",
+        "schedule": [
+          {
+            "day": "พุธ",
+            "time": "09:00-12:00",
+            "room": "E101"
+          },
+          {
+            "day": "ศุกร์",
+            "time": "13:00-15:00",
+            "room": "คอมแลป 1"
+          }
+        ],
+        "midtermExam": "2024-02-14T13:00:00",
+        "finalExam": "2024-03-22T09:00:00",
+        "status": "กำลังเรียน"
+      },
+      {
+        "id": "01219399",
+        "name": "การฝึกงานเบื้องต้น",
+        "nameEng": "Basic Practicum",
+        "section": 1,
+        "credits": 1,
+        "grade": null,
+        "instructor": "ผศ.ดร.ปรีชา ศรีสุข",
+        "schedule": [
+          {
+            "day": "ศุกร์",
+            "time": "16:00-17:00",
+            "room": "ประชุม 2"
+          }
+        ],
+        "midtermExam": null,
+        "finalExam": null,
+        "status": "กำลังเรียน"
+      },
+      {
+        "id": "01355203",
+        "name": "โครงสร้างภาษาอังกฤษเบื้องต้น",
+        "nameEng": "Fundamental English Structure",
+        "section": 3,
+        "credits": 3,
+        "grade": null,
+        "instructor": "อ.จอห์น สมิธ",
+        "schedule": [
+          {
+            "day": "อังคาร",
+            "time": "13:00-16:00",
+            "room": "LH4-401"
+          }
+        ],
+        "midtermExam": "2024-02-13T13:00:00",
+        "finalExam": "2024-03-18T09:00:00",
+        "status": "กำลังเรียน"
+      }
+    ]
+  },
+  "previousSemesters": [
+    {
+      "academicYear": 2023,
+      "term": 1,
+      "registrationStatus": "ลงทะเบียนแล้ว",
+      "paymentStatus": "ชำระเงินแล้ว",
+      "registrationDate": "2023-08-15T10:30:45",
+      "totalCredits": 19,
+      "totalFee": 21500,
+      "gpa": 3.52,
+      "subjects": [
+        {
+          "id": "01219321",
+          "name": "การวิเคราะห์และออกแบบระบบ",
+          "nameEng": "System Analysis and Design",
+          "section": 1,
+          "credits": 3,
+          "grade": "A",
+          "instructor": "รศ.ดร.สมชาย ใจดี",
+          "schedule": [
+            {
+              "day": "จันทร์",
+              "time": "09:00-12:00",
+              "room": "E201"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01219322",
+          "name": "วิศวกรรมซอฟต์แวร์",
+          "nameEng": "Software Engineering",
+          "section": 2,
+          "credits": 3,
+          "grade": "B+",
+          "instructor": "ผศ.ดร.มานพ รักเรียน",
+          "schedule": [
+            {
+              "day": "อังคาร",
+              "time": "13:00-16:00",
+              "room": "E202"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01219231",
+          "name": "โครงสร้างข้อมูล",
+          "nameEng": "Data Structures",
+          "section": 1,
+          "credits": 3,
+          "grade": "A",
+          "instructor": "รศ.ดร.สุชาติ เก่งกาจ",
+          "schedule": [
+            {
+              "day": "พุธ",
+              "time": "09:00-12:00",
+              "room": "E203"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01219243",
+          "name": "สถาปัตยกรรมคอมพิวเตอร์",
+          "nameEng": "Computer Architecture",
+          "section": 1,
+          "credits": 3,
+          "grade": "B",
+          "instructor": "ผศ.ดร.ชาญชัย ชาญเทคโนโลยี",
+          "schedule": [
+            {
+              "day": "พฤหัสบดี",
+              "time": "13:00-16:00",
+              "room": "E101"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01420111",
+          "name": "ฟิสิกส์ทั่วไป I",
+          "nameEng": "General Physics I",
+          "section": 2,
+          "credits": 3,
+          "grade": "B+",
+          "instructor": "รศ.ดร.สมหญิง นักฟิสิกส์",
+          "schedule": [
+            {
+              "day": "ศุกร์",
+              "time": "09:00-12:00",
+              "room": "SC45-305"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01420113",
+          "name": "ปฏิบัติการฟิสิกส์ I",
+          "nameEng": "Laboratory in Physics I",
+          "section": 4,
+          "credits": 1,
+          "grade": "A",
+          "instructor": "ผศ.ดร.นพรัตน์ แสงสว่าง",
+          "schedule": [
+            {
+              "day": "พฤหัสบดี",
+              "time": "09:00-12:00",
+              "room": "SC45-Lab3"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01355104",
+          "name": "ภาษาอังกฤษสำหรับนิสิตเกษตร",
+          "nameEng": "English for Agricultural Students",
+          "section": 5,
+          "credits": 3,
+          "grade": "B",
+          "instructor": "อ.มาร์ค จอห์นสัน",
+          "schedule": [
+            {
+              "day": "พุธ",
+              "time": "13:00-16:00",
+              "room": "LH2-301"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        }
+      ]
+    },
+    {
+      "academicYear": 2022,
+      "term": 3,
+      "registrationStatus": "ลงทะเบียนแล้ว",
+      "paymentStatus": "ชำระเงินแล้ว",
+      "registrationDate": "2023-06-01T11:15:30",
+      "totalCredits": 6,
+      "totalFee": 10000,
+      "gpa": 3.75,
+      "subjects": [
+        {
+          "id": "01219218",
+          "name": "ปฏิบัติการการโปรแกรมคอมพิวเตอร์",
+          "nameEng": "Computer Programming Laboratory",
+          "section": 1,
+          "credits": 3,
+          "grade": "A",
+          "instructor": "ผศ.ดร.วิชัย เทคโนโลยี",
+          "schedule": [
+            {
+              "day": "จันทร์",
+              "time": "09:00-16:00",
+              "room": "คอมแลป 1"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01175111",
+          "name": "กรีฑาลู่และลาน",
+          "nameEng": "Track and Field",
+          "section": 2,
+          "credits": 1,
+          "grade": "A",
+          "instructor": "อ.สมรักษ์ แข็งแรง",
+          "schedule": [
+            {
+              "day": "พุธ",
+              "time": "13:00-16:00",
+              "room": "สนามกีฬากลาง"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01999111",
+          "name": "ศาสตร์แห่งแผ่นดิน",
+          "nameEng": "Knowledge of the Land",
+          "section": 7,
+          "credits": 2,
+          "grade": "B+",
+          "instructor": "ผศ.ดร.รักชาติ ศรัทธา",
+          "schedule": [
+            {
+              "day": "ศุกร์",
+              "time": "09:00-11:00",
+              "room": "LH1-201"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        }
+      ]
+    },
+    {
+      "academicYear": 2022,
+      "term": 2,
+      "registrationStatus": "ลงทะเบียนแล้ว",
+      "paymentStatus": "ชำระเงินแล้ว",
+      "registrationDate": "2022-12-20T14:20:10",
+      "totalCredits": 20,
+      "totalFee": 22000,
+      "gpa": 3.40,
+      "subjects": [
+        {
+          "id": "01219217",
+          "name": "หลักการเขียนโปรแกรมคอมพิวเตอร์",
+          "nameEng": "Principles of Computer Programming",
+          "section": 1,
+          "credits": 3,
+          "grade": "A",
+          "instructor": "รศ.ดร.ชำนาญ โค้ดดิ้ง",
+          "schedule": [
+            {
+              "day": "จันทร์",
+              "time": "09:00-12:00",
+              "room": "E201"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01219115",
+          "name": "การเขียนโปรแกรมคอมพิวเตอร์",
+          "nameEng": "Computer Programming",
+          "section": 2,
+          "credits": 3,
+          "grade": "A",
+          "instructor": "ผศ.ดร.สายฝน คอมพิวเตอร์",
+          "schedule": [
+            {
+              "day": "อังคาร",
+              "time": "13:00-16:00",
+              "room": "E202"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01204112",
+          "name": "เทคโนโลยีการเขียนโปรแกรมคอมพิวเตอร์",
+          "nameEng": "Computer Programming Technology",
+          "section": 1,
+          "credits": 3,
+          "grade": "B+",
+          "instructor": "รศ.ดร.มานะ พยายาม",
+          "schedule": [
+            {
+              "day": "พุธ",
+              "time": "09:00-12:00",
+              "room": "E203"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01417168",
+          "name": "คณิตศาสตร์วิศวกรรม II",
+          "nameEng": "Engineering Mathematics II",
+          "section": 5,
+          "credits": 3,
+          "grade": "B+",
+          "instructor": "รศ.ดร.คณิตา ตัวเลข",
+          "schedule": [
+            {
+              "day": "พฤหัสบดี",
+              "time": "13:00-16:00",
+              "room": "LH3-301"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01403117",
+          "name": "เคมีทั่วไป",
+          "nameEng": "General Chemistry",
+          "section": 3,
+          "credits": 3,
+          "grade": "B",
+          "instructor": "ผศ.ดร.เคมี วิทยาศาสตร์",
+          "schedule": [
+            {
+              "day": "ศุกร์",
+              "time": "09:00-12:00",
+              "room": "SC45-206"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01403114",
+          "name": "ปฏิบัติการเคมีทั่วไป",
+          "nameEng": "Laboratory in General Chemistry",
+          "section": 6,
+          "credits": 1,
+          "grade": "A",
+          "instructor": "อ.ดร.สารเคมี ทดลอง",
+          "schedule": [
+            {
+              "day": "พฤหัสบดี",
+              "time": "09:00-12:00",
+              "room": "SC45-Lab2"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01175162",
+          "name": "ศิลปะการป้องกันตัว",
+          "nameEng": "Art of Self Defense",
+          "section": 1,
+          "credits": 1,
+          "grade": "A",
+          "instructor": "อ.สมพร แข็งแกร่ง",
+          "schedule": [
+            {
+              "day": "พุธ",
+              "time": "15:00-18:00",
+              "room": "ยิมเนเซียม 1"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        },
+        {
+          "id": "01371111",
+          "name": "สื่อสารสนเทศ",
+          "nameEng": "Information Media",
+          "section": 4,
+          "credits": 3,
+          "grade": "A",
+          "instructor": "ผศ.ดร.ข้อมูล สารสนเทศ",
+          "schedule": [
+            {
+              "day": "อังคาร",
+              "time": "09:00-12:00",
+              "room": "LH2-201"
+            }
+          ],
+          "status": "เรียนเสร็จสิ้น"
+        }
+      ]
+    }
+  ],
+  "availableCourses": [
+    {
+      "id": "01219324",
+      "name": "การออกแบบและการพัฒนาเว็บ",
+      "nameEng": "Web Design and Development",
+      "section": 1,
+      "credits": 3,
+      "instructor": "ผศ.ดร.เว็บไซต์ พัฒนา",
+      "availableSeats": 15,
+      "maxSeats": 40,
+      "schedule": [
+        {
+          "day": "จันทร์",
+          "time": "13:00-16:00",
+          "room": "E204"
+        },
+        {
+          "day": "พุธ",
+          "time": "16:00-18:00",
+          "room": "คอมแลป 4"
+        }
+      ],
+      "midtermExam": "2024-02-12T13:00:00",
+      "finalExam": "2024-03-18T13:00:00",
+      "prerequisite": ["01219217", "01219218"]
+    },
+    {
+      "id": "01219349",
+      "name": "การพัฒนาซอฟต์แวร์เชิงปฏิบัติ",
+      "nameEng": "Practical Software Development",
+      "section": 1,
+      "credits": 3,
+      "instructor": "รศ.ดร.โปรแกรมเมอร์ ชำนาญ",
+      "availableSeats": 5,
+      "maxSeats": 30,
+      "schedule": [
+        {
+          "day": "อังคาร",
+          "time": "09:00-12:00",
+          "room": "E101"
+        },
+        {
+          "day": "พฤหัสบดี",
+          "time": "13:00-15:00",
+          "room": "คอมแลป 1"
+        }
+      ],
+      "midtermExam": "2024-02-13T09:00:00",
+      "finalExam": "2024-03-19T13:00:00",
+      "prerequisite": ["01219321", "01219322"]
+    },
+    {
+      "id": "01219373",
+      "name": "การบริหารเครือข่าย",
+      "nameEng": "Network Administration",
+      "section": 2,
+      "credits": 3,
+      "instructor": "ผศ.ดร.เน็ตเวิร์ค อินเทอร์เน็ต",
+      "availableSeats": 20,
+      "maxSeats": 35,
+      "schedule": [
+        {
+          "day": "จันทร์",
+          "time": "16:00-19:00",
+          "room": "E203"
+        },
+        {
+          "day": "พุธ",
+          "time": "13:00-15:00",
+          "room": "เน็ตแลป 1"
+        }
+      ],
+      "midtermExam": "2024-02-14T16:00:00",
+      "finalExam": "2024-03-20T13:00:00",
+      "prerequisite": ["01219243"]
+    },
+    {
+      "id": "01219496",
+      "name": "เรื่องเฉพาะทางวิศวกรรมคอมพิวเตอร์",
+      "nameEng": "Selected Topics in Computer Engineering",
+      "section": 1,
+      "credits": 3,
+      "instructor": "รศ.ดร.พิเศษ เทคโนโลยี",
+      "availableSeats": 10,
+      "maxSeats": 20,
+      "schedule": [
+        {
+          "day": "ศุกร์",
+          "time": "09:00-12:00",
+          "room": "E101"
+        }
+      ],
+      "midtermExam": "2024-02-16T09:00:00",
+      "finalExam": "2024-03-22T09:00:00",
+      "prerequisite": []
+    },
+    {
+      "id": "01219499",
+      "name": "โครงงานวิศวกรรมคอมพิวเตอร์ I",
+      "nameEng": "Computer Engineering Project I",
+      "section": 1,
+      "credits": 1,
+      "instructor": "คณาจารย์ภาควิชา",
+      "availableSeats": 35,
+      "maxSeats": 50,
+      "schedule": [
+        {
+          "day": "พฤหัสบดี",
+          "time": "16:00-18:00",
+          "room": "ห้องประชุมภาควิชา"
+        }
+      ],
+      "midtermExam": null,
+      "finalExam": null,
+      "prerequisite": ["01219321"]
+    },
+    {
+      "id": "01355209",
+      "name": "การฟัง-พูดภาษาอังกฤษ",
+      "nameEng": "English Listening-Speaking",
+      "section": 2,
+      "credits": 3,
+      "instructor": "อ.ซาร่า แฮริส",
+      "availableSeats": 12,
+      "maxSeats": 30,
+      "schedule": [
+        {
+          "day": "อังคาร",
+          "time": "13:00-16:00",
+          "room": "LH3-401"
+        }
+      ],
+      "midtermExam": "2024-02-15T13:00:00",
+      "finalExam": "2024-03-19T09:00:00",
+      "prerequisite": ["01355104"]
+    },
+    {
+      "id": "01175117",
+      "name": "ฟุตบอล",
+      "nameEng": "Soccer",
+      "section": 3,
+      "credits": 1,
+      "instructor": "อ.ฟุตบอล นักกีฬา",
+      "availableSeats": 8,
+      "maxSeats": 25,
+      "schedule": [
+        {
+          "day": "พุธ",
+          "time": "15:00-18:00",
+          "room": "สนามฟุตบอล 1"
+        }
+      ],
+      "midtermExam": null,
+      "finalExam": null,
+      "prerequisite": []
+    }
+  ]
+}
