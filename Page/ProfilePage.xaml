@@ -10,7 +10,7 @@
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="#FFD700" Offset="0.0" />
+                    <GradientStop Color="#FF880E00" Offset="0.0" />
                     <GradientStop Color="#f0f0f0" Offset="0.6" />
                     <GradientStop Color="#777777" Offset="1.0" />
                 </LinearGradientBrush>
@@ -18,7 +18,7 @@
         </BoxView>
         
         <!-- Decorative elements (เหมือนกับหน้าอื่นๆ) -->
-        <BoxView Color="#FFD700" Opacity="0.3"
+        <BoxView Color="White" Opacity="0.3"
                  HeightRequest="200" WidthRequest="200"
                  HorizontalOptions="End" VerticalOptions="Start"
                  CornerRadius="100" Margin="-50,-50,0,0" />
@@ -41,7 +41,7 @@
                     <!-- Back Button -->
                     <Button Grid.Column="0" 
                             Text="&#x2190; กลับ" 
-                            BackgroundColor="#FFD700" 
+                            BackgroundColor="#BD0CE70C" 
                             TextColor="#333333"
                             HeightRequest="40"
                             WidthRequest="90"
@@ -75,8 +75,8 @@
                         <BoxView>
                             <BoxView.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                                    <GradientStop Color="#FFD700" Offset="0.0" />
-                                    <GradientStop Color="#FFB700" Offset="1.0" />
+                                    <GradientStop Color="#FFA10000" Offset="0.0" />
+                                    <GradientStop Color="#C7775607" Offset="1.0" />
                                 </LinearGradientBrush>
                             </BoxView.Background>
                         </BoxView>
@@ -198,7 +198,7 @@
                                    VerticalOptions="Center"/>
                             <Label Grid.Row="2" Grid.Column="1" 
                                    x:Name="EngNameLabel" 
-                                   Text="MR.DEK1MILLIONBAHT" 
+                                   Text="Panudeach" 
                                    FontSize="15" 
                                    TextColor="#333333"
                                    FontAttributes="Bold"
@@ -518,16 +518,7 @@
                 </Frame>
                 
                 <!-- Footer -->
-                <VerticalStackLayout HorizontalOptions="Center" Spacing="5" Margin="0,0,0,20">
-                    <Label Text="ระบบลงทะเบียนเรียนนิสิต" 
-                           FontSize="13" 
-                           TextColor="#555555" 
-                           HorizontalOptions="Center"/>
-                    <Label Text="Version 1.0.0" 
-                           FontSize="12" 
-                           TextColor="#666666" 
-                           HorizontalOptions="Center"/>
-                </VerticalStackLayout>
+                
             </VerticalStackLayout>
         </ScrollView>
     </Grid>

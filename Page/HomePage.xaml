@@ -327,12 +327,8 @@
 
                             <!-- Announcements Section -->
                             <StackLayout VerticalOptions="CenterAndExpand"
-                                          HorizontalOptions="CenterAndExpand">
-                                   <Label Text="ประกาศข่าวสาร"
-                                          FontSize="18"
-                                          FontAttributes="Bold"
-                                          TextColor="#333333"
-                                          Margin="5,0,0,5"/>
+                                         HorizontalOptions="CenterAndExpand">
+
                             </StackLayout>
 
 
@@ -343,98 +339,7 @@
                                    BackgroundColor="#FFFFEE"
                                    Opacity="0.95"
                                    Margin="0,0,0,10">
-                                   <VerticalStackLayout Spacing="15">
-                                          <!-- Announcement Item 1 -->
-                                          <Grid>
-                                                 <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="Auto"/>
-                                                        <ColumnDefinition Width="*"/>
-                                                 </Grid.ColumnDefinitions>
-
-                                                 <Frame Grid.Column="0"
-                                                        BorderColor="#FFD700"
-                                                        BackgroundColor="#FFD700"
-                                                        CornerRadius="25"
-                                                        HeightRequest="50"
-                                                        WidthRequest="50"
-                                                        Padding="0"
-                                                        VerticalOptions="Start">
-                                                        <Label Text="!"
-                                                               FontSize="28"
-                                                               FontAttributes="Bold"
-                                                               TextColor="#333333"
-                                                               HorizontalOptions="Center"
-                                                               VerticalOptions="Center"/>
-                                                 </Frame>
-
-                                                 <VerticalStackLayout Grid.Column="1"
-                                                                      Margin="15,0,0,0">
-                                                        <Label Text="กำหนดการลงทะเบียนเรียนภาคฤดูร้อน ปีการศึกษา 2567"
-                                                               FontSize="15"
-                                                               FontAttributes="Bold"
-                                                               TextColor="#333333"/>
-                                                        <Label Text="ประกาศเมื่อ: 15 มี.ค. 2568"
-                                                               FontSize="12"
-                                                               TextColor="#777777"/>
-                                                        <Label Text="เริ่มลงทะเบียน 1 เม.ย. 2568 ถึง 15 เม.ย. 2568"
-                                                               FontSize="14"
-                                                               TextColor="#555555"
-                                                               Margin="0,5,0,0"/>
-                                                 </VerticalStackLayout>
-                                          </Grid>
-
-                                          <BoxView Color="#DDDDDD"
-                                                   HeightRequest="1"/>
-
-                                          <!-- Announcement Item 2 -->
-                                          <Grid>
-                                                 <Grid.ColumnDefinitions>
-                                                        <ColumnDefinition Width="Auto"/>
-                                                        <ColumnDefinition Width="*"/>
-                                                 </Grid.ColumnDefinitions>
-
-                                                 <Frame Grid.Column="0"
-                                                        BorderColor="#FFD700"
-                                                        BackgroundColor="#FFD700"
-                                                        CornerRadius="25"
-                                                        HeightRequest="50"
-                                                        WidthRequest="50"
-                                                        Padding="0"
-                                                        VerticalOptions="Start">
-                                                        <Label Text="!"
-                                                               FontSize="28"
-                                                               FontAttributes="Bold"
-                                                               TextColor="#333333"
-                                                               HorizontalOptions="Center"
-                                                               VerticalOptions="Center"/>
-                                                 </Frame>
-
-                                                 <VerticalStackLayout Grid.Column="1"
-                                                                      Margin="15,0,0,0">
-                                                        <Label Text="ปรับเปลี่ยนรายวิชาที่เปิดสอนในภาคเรียนที่ 2/2567"
-                                                               FontSize="15"
-                                                               FontAttributes="Bold"
-                                                               TextColor="#333333"/>
-                                                        <Label Text="ประกาศเมื่อ: 10 มี.ค. 2568"
-                                                               FontSize="12"
-                                                               TextColor="#777777"/>
-                                                        <Label Text="มีการเปลี่ยนแปลงรายวิชาที่เปิดสอน โปรดตรวจสอบรายละเอียด"
-                                                               FontSize="14"
-                                                               TextColor="#555555"
-                                                               Margin="0,5,0,0"/>
-                                                 </VerticalStackLayout>
-                                          </Grid>
-
-                                          <!-- View All Announcements Button -->
-                                          <Button Text="ดูประกาศทั้งหมด"
-                                                  BackgroundColor="#666666"
-                                                  TextColor="White"
-                                                  CornerRadius="20"
-                                                  FontSize="14"
-                                                  HeightRequest="40"
-                                                  FontAttributes="Bold"
-                                                  Margin="0,5,0,0"/>
-                                   </VerticalStackLayout>
+                                   
                             </Frame>
 
                             <!-- Footer -->

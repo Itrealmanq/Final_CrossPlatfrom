@@ -1453,3 +1453,5 @@ C:\Final_CrossPlatfrom\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\qualifiers
 C:\Final_CrossPlatfrom\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\MultipleQualifiersPerDimensionFound.txt
 C:\Final_CrossPlatfrom\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\loginscreen.scale-100.jpg
 C:\Final_CrossPlatfrom\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\loginscreen.scale-100.jpg
+C:\Final_CrossPlatfrom\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\best_university_wallpaper.scale-100.jpg
+C:\Final_CrossPlatfrom\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\resizetizer\r\best_university_wallpaper.scale-100.jpg
