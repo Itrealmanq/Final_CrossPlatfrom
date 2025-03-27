@@ -7,7 +7,6 @@
              x:DataType="viewmodel:ShowDataStudent"
              Title="ถอนวิชา">
     <Grid>
-        <!-- Background with yellow and gray gradient -->
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">

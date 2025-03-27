@@ -20,14 +20,10 @@
                               AbsoluteLayout.LayoutBounds="0, 0, 1, 1"/>
               </AbsoluteLayout>
 
-
-
-              <!-- ScrollView and content UI -->
               <ScrollView>
                      <VerticalStackLayout Spacing="20"
                                           Padding="30"
                                           VerticalOptions="Center">
-                            <!-- Compact Login Form with yellow-gray theme -->
                             <Frame BorderColor="#CCCCCC"
                                    CornerRadius="15"
                                    Padding="20"
@@ -38,7 +34,7 @@
                                    HorizontalOptions="Center"
                                    Margin="0,20,0,20">
                                    <VerticalStackLayout Spacing="12">
-                                          <!-- Logo and header -->
+                                         
                                           <Image Source="app_logo.png"
                                                  HeightRequest="120"
                                                  HorizontalOptions="Center"/>
@@ -55,7 +51,7 @@
                                                  TextColor="#666666"
                                                  Margin="0,0,0,8"/>
 
-                                          <!-- Email Field -->
+                                       
                                           <Label Text="อีเมล"
                                                  FontSize="14"
                                                  TextColor="#444444"
@@ -77,8 +73,6 @@
                                                         VerticalOptions="Center"
                                                         FontSize="14"/>
                                           </Frame>
-
-                                          <!-- Password Field -->
                                           <Label Text="รหัสผ่าน"
                                                  FontSize="14"
                                                  TextColor="#444444"
@@ -101,7 +95,6 @@
                                                         FontSize="14"/>
                                           </Frame>
 
-                                          <!-- Login Button with university colors -->
                                           <Button x:Name="LoginButton"
                                                   Text="เข้าสู่ระบบ"
                                                   BackgroundColor="#FF29D307"
@@ -111,7 +104,6 @@
                                                   HeightRequest="46"
                                                   CornerRadius="23"/>
 
-                                          <!-- Forgot Password -->
                                           <Label Text="ลืมรหัสผ่าน?"
                                                  HorizontalOptions="Center"
                                                  TextColor="#666666"
@@ -124,7 +116,7 @@
                                    </VerticalStackLayout>
                             </Frame>
 
-                            <!-- Version info -->
+                         
                             <Label Text="Version 1.0.0"
                                    HorizontalOptions="Center"
                                    TextColor="#444444"

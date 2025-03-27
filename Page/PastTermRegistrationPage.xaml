@@ -7,7 +7,6 @@
              x:DataType="viewmodel:ShowDataStudent"
              Title="ข้อมูลการลงทะเบียนเทอมก่อนหน้า">
     <Grid>
-        <!-- Background with yellow and gray gradient -->
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
@@ -18,7 +17,6 @@
         </BoxView>
         <ScrollView>
             <VerticalStackLayout Spacing="15" Padding="20">
-                <!-- Header with back button -->
                 <Grid Margin="0,15,0,10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -32,8 +30,6 @@
                            TextColor="#333333" HorizontalOptions="Center" VerticalOptions="Center"/>
 
                 </Grid>
-
-                <!-- Term Selector Card -->
                 <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
                        BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
                     <VerticalStackLayout Spacing="15">
@@ -99,8 +95,6 @@
                         </Grid>
                     </VerticalStackLayout>
                 </Frame>
-
-                <!-- Selected Term Information Card -->
                 <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
                        BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
                     <Grid>
@@ -114,8 +108,6 @@
                         </VerticalStackLayout>
                     </Grid>
                 </Frame>
-
-                <!-- Registration Summary Card -->
                 <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
                        BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
                     <Grid ColumnSpacing="15">
@@ -145,8 +137,6 @@
                         </VerticalStackLayout>
                     </Grid>
                 </Frame>
-
-                <!-- Course List Card -->
                 <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
                        BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
                     <VerticalStackLayout Spacing="15">
@@ -172,16 +162,12 @@
                                     <ColumnDefinition Width="*"/>
                                     <ColumnDefinition Width="Auto"/>
                                 </Grid.ColumnDefinitions>
-
-                                <!-- Type Indicator -->
                                 <BoxView Grid.Column="0"
                                          Color="#FFD700"
                                          WidthRequest="8"
                                          HeightRequest="60"
                                          CornerRadius="4"
                                          VerticalOptions="Center"/>
-
-                                <!-- Course Info -->
                                 <VerticalStackLayout Grid.Column="1"
                                                      Spacing="5">
                                     <Label Text="{Binding Id}"
@@ -210,7 +196,6 @@
                                     </HorizontalStackLayout>
                                 </VerticalStackLayout>
 
-                                <!-- Grade -->
                                 <Frame Grid.Column="2"
                                        BackgroundColor="#44CC00"
                                        CornerRadius="20"

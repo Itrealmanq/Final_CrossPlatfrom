@@ -6,7 +6,6 @@
              x:DataType="viewmodel:ShowDataStudent"
              Title="โปรไฟล์นิสิต">
     <Grid>
-        <!-- Background with yellow and gray gradient (เหมือนกับหน้าอื่นๆ) -->
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
@@ -16,8 +15,7 @@
                 </LinearGradientBrush>
             </BoxView.Background>
         </BoxView>
-        
-        <!-- Decorative elements (เหมือนกับหน้าอื่นๆ) -->
+       
         <BoxView Color="White" Opacity="0.3"
                  HeightRequest="200" WidthRequest="200"
                  HorizontalOptions="End" VerticalOptions="Start"
@@ -30,15 +28,14 @@
                  
         <ScrollView>
             <VerticalStackLayout Spacing="20" Padding="20">
-                <!-- Header with back button -->
+
                 <Grid Margin="0,15,0,10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    
-                    <!-- Back Button -->
+              
                     <Button Grid.Column="0" 
                             Text="&#x2190; กลับ" 
                             BackgroundColor="#BD0CE70C" 
@@ -50,7 +47,7 @@
                             VerticalOptions="Start"
                             Clicked="OnDetailsClickedback"/>
                     
-                    <!-- Page Title -->
+         
                     <Label Grid.Column="1" 
                            Text="ข้อมูลโปรไฟล์" 
                            FontSize="22" 
@@ -61,7 +58,7 @@
                     
                 </Grid>
                 
-                 <!-- Profile Photo and Cover Section -->
+                
                <Frame BorderColor="#CCCCCC" 
                        CornerRadius="15" 
                        Padding="0" 
@@ -71,7 +68,7 @@
                        HeightRequest="200"
                        Margin="0,5,0,10">
                     <Grid>
-                        <!-- Cover Background -->
+                      
                         <BoxView>
                             <BoxView.Background>
                                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
@@ -81,7 +78,7 @@
                             </BoxView.Background>
                         </BoxView>
 
-                        <!-- Decorative Elements for Cover -->
+                        
                         <BoxView Color="White" Opacity="0.1"
                                  HeightRequest="100" WidthRequest="100"
                                  HorizontalOptions="Start" VerticalOptions="Start"
@@ -92,7 +89,7 @@
                                  HorizontalOptions="End" VerticalOptions="Start"
                                  CornerRadius="35" Margin="0,30,40,0" />
 
-                        <!-- Profile Photo and Labels -->
+                        
                         <VerticalStackLayout VerticalOptions="Center" 
                                              HorizontalOptions="Center">
                             <Frame BorderColor="White" 
@@ -134,7 +131,7 @@
                 </Frame>
 
                 
-                <!-- Student Information Card -->
+              
                 <Frame BorderColor="#CCCCCC" 
                        CornerRadius="15" 
                        Padding="20" 
@@ -176,7 +173,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 2: Thai Name -->
+                           
                             <Label Grid.Row="1" Grid.Column="0" 
                                    Text="ชื่อ-นามสกุล:" 
                                    FontSize="15" 
@@ -190,7 +187,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 3: English Name -->
+                           
                             <Label Grid.Row="2" Grid.Column="0" 
                                    Text="ชื่ออังกฤษ:" 
                                    FontSize="15" 
@@ -204,7 +201,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 4: Faculty -->
+                            
                             <Label Grid.Row="3" Grid.Column="0" 
                                    Text="คณะ:" 
                                    FontSize="15" 
@@ -218,7 +215,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 5: Major -->
+                       
                             <Label Grid.Row="4" Grid.Column="0" 
                                    Text="สาขาวิชา:" 
                                    FontSize="15" 
@@ -232,7 +229,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 6: Study Year -->
+                           
                             <Label Grid.Row="5" Grid.Column="0" 
                                    Text="ชั้นปี:" 
                                    FontSize="15" 
@@ -249,7 +246,7 @@
                     </VerticalStackLayout>
                 </Frame>
                 
-                <!-- Contact Information Card -->
+               
                 <Frame BorderColor="#CCCCCC" 
                        CornerRadius="15" 
                        Padding="20" 
@@ -275,7 +272,7 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             
-                            <!-- Row 1: Email -->
+                           
                             <Label Grid.Row="0" Grid.Column="0" 
                                    Text="อีเมล:" 
                                    FontSize="15" 
@@ -289,7 +286,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 2: Phone -->
+                            
                             <Label Grid.Row="1" Grid.Column="0" 
                                    Text="เบอร์โทรศัพท์:" 
                                    FontSize="15" 
@@ -303,7 +300,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 3: Address -->
+                           
                             <Label Grid.Row="2" Grid.Column="0" 
                                    Text="ที่อยู่:" 
                                    FontSize="15" 
@@ -317,7 +314,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 4: Emergency Contact -->
+                         
                             <Label Grid.Row="3" Grid.Column="0" 
                                    Text="วันเกิด:" 
                                    FontSize="15" 
@@ -334,7 +331,7 @@
                     </VerticalStackLayout>
                 </Frame>
                 
-                <!-- Academic Information Card -->
+                
                 <Frame BorderColor="#CCCCCC" 
                        CornerRadius="15" 
                        Padding="20" 
@@ -360,7 +357,7 @@
                                 <ColumnDefinition Width="*"/>
                             </Grid.ColumnDefinitions>
                             
-                            <!-- Row 1: Status -->
+                            
                             <Label Grid.Row="0" Grid.Column="0" 
                                    Text="สถานภาพการศึกษา:" 
                                    FontSize="15" 
@@ -374,7 +371,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 2: Admission Year -->
+                        
                             <Label Grid.Row="1" Grid.Column="0" 
                                    Text="ปีที่เข้าศึกษา:" 
                                    FontSize="15" 
@@ -388,7 +385,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 3: GPAX -->
+                            
                             <Label Grid.Row="2" Grid.Column="0" 
                                    Text="GPAX:" 
                                    FontSize="15" 
@@ -402,7 +399,7 @@
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                             
-                            <!-- Row 4: Total Credits -->
+                          
                             <Label Grid.Row="3" Grid.Column="0" 
                                    Text="จำนวนหน่วยกิตสะสม:" 
                                    FontSize="15" 
@@ -410,14 +407,14 @@
                                    VerticalOptions="Center"/>
                             <Label Grid.Row="3" Grid.Column="1" 
                                    x:Name="CreditsLabel" 
-                                   Text="96 / 145 หน่วยกิต" 
+                                   Text="100 / 145 หน่วยกิต" 
                                    FontSize="15" 
                                    TextColor="#333333"
                                    FontAttributes="Bold"
                                    VerticalOptions="Center"/>
                         </Grid>
                         
-                        <!-- GPAX Progress Bar -->
+                     
                         <VerticalStackLayout Spacing="5" Margin="0,10,0,0">
                             <Grid>
                                 <Grid.ColumnDefinitions>
@@ -430,7 +427,7 @@
                                        FontSize="15" 
                                        TextColor="#555555"/>
                                 <Label Grid.Column="1" 
-                                       Text="66%" 
+                                       Text="70%" 
                                        FontSize="15" 
                                        TextColor="#333333"
                                        FontAttributes="Bold"/>
@@ -445,17 +442,17 @@
                                     <BoxView BackgroundColor="#EEEEEE" />
                                     <BoxView BackgroundColor="#FFD700" 
                                              HorizontalOptions="Start" 
-                                             WidthRequest="260" /> <!-- Set based on percentage -->
+                                             WidthRequest="260" /> 
                                 </Grid>
                             </Frame>
                         </VerticalStackLayout>
                         
-                        <!-- Academic History Button -->
+                       
                       
                     </VerticalStackLayout>
                 </Frame>
                 
-                <!-- Advisor Information Card -->
+               
                 <Frame BorderColor="#CCCCCC" 
                        CornerRadius="15" 
                        Padding="20" 
@@ -469,7 +466,6 @@
                             <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
                         
-                        <!-- Advisor Image -->
                         <Frame Grid.Column="0" 
                                BorderColor="#FFD700" 
                                CornerRadius="35" 
@@ -483,8 +479,6 @@
                                    HeightRequest="70" 
                                    WidthRequest="70"/>
                         </Frame>
-                        
-                        <!-- Advisor Info -->
                         <VerticalStackLayout Grid.Column="1" Spacing="5" VerticalOptions="Center">
                             <Label Text="อาจารย์ที่ปรึกษา" 
                                    FontSize="16" 

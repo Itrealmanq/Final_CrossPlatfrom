@@ -7,7 +7,6 @@
              x:DataType="viewmodel:ShowDataStudent"
              Title="ข้อมูลการลงทะเบียนเทอมปัจจุบัน">
     <Grid>
-        <!-- Background with yellow and gray gradient -->
         <BoxView>
             <BoxView.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
@@ -23,7 +22,6 @@
                  HorizontalOptions="Start" VerticalOptions="End" CornerRadius="75" Margin="-30,0,0,-30"/>
         <ScrollView>
             <VerticalStackLayout Spacing="15" Padding="20">
-                <!-- Header with back button -->
                 <Grid Margin="0,15,0,10">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
@@ -37,8 +35,6 @@
                            TextColor="#333333" HorizontalOptions="Center" VerticalOptions="Center"/>
                     
                 </Grid>
-
-                <!-- Term Information Card -->
                 <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
                        BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
                     <Grid>
@@ -53,8 +49,6 @@
                         </VerticalStackLayout>
                     </Grid>
                 </Frame>
-
-                <!-- Registration Summary Card -->
                 <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
                        BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
                     <Grid ColumnSpacing="15">
@@ -77,8 +71,6 @@
                         </VerticalStackLayout>
                     </Grid>
                 </Frame>
-
-                <!-- Course Schedule Card -->
                 <Frame BorderColor="#CCCCCC" CornerRadius="15" Padding="20" HasShadow="True"
                        BackgroundColor="#FFFFEE" Opacity="0.95" Margin="0,5,0,10">
                     <VerticalStackLayout Spacing="15">

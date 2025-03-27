@@ -6,7 +6,6 @@
              x:DataType="viewmodel:ShowDataStudent"
              Title="หน้าหลัก">
        <Grid>
-              <!-- Background with yellow and gray gradient (เหมือนกับหน้า Login) -->
               <BoxView>
                      <BoxView.Background>
                             <LinearGradientBrush StartPoint="0,0"
@@ -19,8 +18,6 @@
                             </LinearGradientBrush>
                      </BoxView.Background>
               </BoxView>
-
-              <!-- Decorative elements (เหมือนกับหน้า Login) -->
               <BoxView Color="#FFC47900"
                        Opacity="0.3"
                        HeightRequest="200"
@@ -42,7 +39,7 @@
               <ScrollView>
                      <VerticalStackLayout Spacing="15"
                                           Padding="20">
-                            <!-- Header with logo and welcome message -->
+                        
                             <Grid Margin="0,15,0,10">
                                    <Grid.ColumnDefinitions>
                                           <ColumnDefinition Width="Auto"/>
@@ -50,18 +47,16 @@
                                           <ColumnDefinition Width="Auto"/>
                                    </Grid.ColumnDefinitions>
 
-                                   <!-- Logo -->
                                    <Image Grid.Column="0"
                                           Source="app_logo.png"
                                           HeightRequest="60"
                                           WidthRequest="60"
                                           VerticalOptions="Center"/>
 
-                                   <!-- Welcome Message -->
                                    <VerticalStackLayout Grid.Column="1"
                                                         VerticalOptions="Center"
                                                         Margin="15,0">
-                                          <!-- Welcome Message -->
+                                         
                                           <Label x:Name="WelcomeLabel"
                                                  Text="{Binding User.Student.Profile.Firstname, StringFormat='ยินดีต้อนรับ, {0}'}"
                                                  FontSize="22"
@@ -75,7 +70,7 @@
 
 
 
-                                   <!-- Logout Button -->
+                        
                                    <Button Grid.Column="2"
                                            Text="ออกจากระบบ"
                                            BackgroundColor="#666666"
@@ -88,7 +83,7 @@
                                            Clicked="OnClickedLogin"/>
                             </Grid>
 
-                            <!-- Profile Card -->
+                           
                             <Frame BorderColor="#CCCCCC"
                                    CornerRadius="15"
                                    Padding="15"
@@ -102,7 +97,7 @@
                                                  <ColumnDefinition Width="*"/>
                                           </Grid.ColumnDefinitions>
 
-                                          <!-- Profile Image -->
+                                         
                                           <Frame Grid.Column="0"
                                                  BorderColor="#FFC47900"
                                                  CornerRadius="50"
@@ -118,7 +113,6 @@
                                                         WidthRequest="100"/>
                                           </Frame>
 
-                                          <!-- Profile Info -->
                                           <VerticalStackLayout Grid.Column="1"
                                                                Margin="15,0,0,0"
                                                                Spacing="8">
@@ -146,7 +140,7 @@
                                                         FontSize="15"
                                                         TextColor="Black"/>
 
-                                                 <!-- View Profile Button -->
+                                             
                                                  <Button Text="ดูข้อมูลโปรไฟล์"
                                                          BackgroundColor="#FF56D822"
                                                          TextColor="#333333"
@@ -162,7 +156,7 @@
                                    </Grid>
                             </Frame>
 
-                            <!-- Main Menu Cards -->
+                
                             <StackLayout VerticalOptions="CenterAndExpand"
                                          HorizontalOptions="CenterAndExpand">
                                    <Label Text="เมนูลงทะเบียน"
@@ -183,7 +177,6 @@
                                           <ColumnDefinition Width="*"/>
                                    </Grid.ColumnDefinitions>
 
-                                   <!-- Current Term Registration Card -->
                                    <Frame Grid.Row="0"
                                           Grid.Column="0"
                                           BorderColor="#CCCCCC"
@@ -217,8 +210,6 @@
                                                          Clicked="OnDetailsClicked"/>
                                           </VerticalStackLayout>
                                    </Frame>
-
-                                   <!-- Previous Term Registration Card -->
                                    <Frame Grid.Row="0"
                                           Grid.Column="1"
                                           BorderColor="#CCCCCC"
@@ -287,8 +278,6 @@
                                                          Clicked="OnCourseButtonClicked"/>
                                           </VerticalStackLayout>
                                    </Frame>
-
-                                   <!-- Withdraw Course Card -->
                                    <Frame Grid.Row="1"
                                           Grid.Column="1"
                                           BorderColor="#CCCCCC"
@@ -324,8 +313,6 @@
                                           </VerticalStackLayout>
                                    </Frame>
                             </Grid>
-
-                            <!-- Announcements Section -->
                             <StackLayout VerticalOptions="CenterAndExpand"
                                          HorizontalOptions="CenterAndExpand">
 
@@ -341,8 +328,6 @@
                                    Margin="0,0,0,10">
                                    
                             </Frame>
-
-                            <!-- Footer -->
                             <VerticalStackLayout HorizontalOptions="Center"
                                                  Spacing="5"
                                                  Margin="0,0,0,20">
